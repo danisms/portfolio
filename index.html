@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel C. Opute">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link type="image/png" rel="icon" href="images/logo.png">
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="index.html" id="logo_link">
+                <img id="logo" src="images/logo.png" alt="danism-web logo" width="75" height="75">
+            </a>
+            <a onclick="changeBar()" href="#" id="menu-button">
+                <div id="menu-icon">
+                    <img src="images/menu_bar_round.png" id="menu_img" alt="menu-icon" width="60" height="60">
+                </div>
+            </a>
+            <nav id="navigation">
+                <a href="index.html" id="selected">HOME</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="about-me.html">ABOUT-ME</a>
+                <a href="contact-me.html">CONTACT-ME</a>
+            </nav>
+        </header>
+        <div id="home-hero">
+            <div id="home-hero-box">
+                <img src="images/home/computer_screen.jpg" alt="working desk with computer, book and pen">
+            </div>
+            <section class="home-hero-msg">
+                <h1 class="home-title">WELCOME TO DANISM-WEB</h1>
+                <h3>Imagination is The Beginning of Creation</h3>
+                <a id="myBtn" class="a-button">
+                    <div class="button-box">Contact Me</div>
+                </a>
+            </section>
+        </div>
+        <main class="home-grid">
+            <!--CREATING SUB-PAGE BOXES-->
+            <!--Projects Sub-page Box-->
+            <a href="projects.html" class="sub-page-link" onmouseover="displayProjectDes()" onmouseleave="removeProjectDes()">
+                <div class="sub-page-box" id="project-box">
+                    <div class="description-box">
+                        <div class="description" id="project-description">
+                            <p>
+                                A selection for my designs, working projects, previous works, and lots more.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/home/coding_in_prog.jpg" alt="computer screen, coding in progress">
+                        </div>
+                    </div>
+                    <h2>Projects</h2>
+                </div>
+            </a>
+            <!--Portfolio Sub-page Box-->
+            <a href="portfolio.html" class="sub-page-link" onmouseover="displayPortfolioDes()" onmouseleave="removePortfolioDes()">
+                <div class="sub-page-box" id="portfolio-box">
+                    <div class="description-box">
+                        <div class="description" id="portfolio-description">
+                            <p>
+                                Take a quick view of my resume, and decide if you would like to work with me.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/home/portfolio.jpg" alt="portfolio template">
+                        </div>
+                    </div>
+                    <h2>Portfolio</h2>
+                </div>
+            </a>
+            <!--About-me Sub-page Box-->
+            <a href="about-me.html" class="sub-page-link" onmouseover="displayAboutMeDes()" onmouseleave="removeAboutMeDes()">
+                <div class="sub-page-box" id="about-me-box">
+                    <div class="description-box">
+                        <div class="description" id="about-me-description">
+                            <p>
+                                Get most of the information you would want to know about me, 
+                                i.e., my full name, my background, my personality, past jobs, and more.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/home/daniel_opute.png" alt="photo of me(Daniel C. Opute)">
+                        </div>
+                    </div>
+                    <h2>About Me</h2>
+                </div>
+            </a>
+            <!--CREATING PAGE SUMMARY BOX AND CONTENT-->
+            <div class="summary-box">
+                <h3>About Danism-Web</h3>
+                <p>
+                    This is my personal website for showcasing my web development skills, 
+                    passion, and talents to all potential collaborators, most especially employers. 
+                    Here you can get a quick, detailed glimpse of my web development skills, projects, 
+                    and basically anything you need to know about me. If you are a web designer like me, 
+                    then you are welcome to rectify my work or just get project ideals and design patterns 
+                    to work on. Thank you for visiting, please, feel free to work through every other section 
+                    of the website. Your satisfaction is my joy.
+                </p>
+                <div id="slide-box">
+                    <img src="images/home/slide-img/desktop-cal.png" alt="slide-images" id="img_1">
+                    <img src="images/home/slide-img/amusement-raft.png" alt="slide-images" id="img_2">
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Contact Me</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form onsubmit="play()" id="form" class="gform pure-form pure-form-stacked" method="POST"
+                            data-email="danielcopute@gmail.com"
+                            action="https://script.google.com/macros/s/AKfycbxshFOI02RWVgVv902x0ZHzGLeesCyRG38HbG50wrmnCDOUvmFNnhlUUxmbdcq8U316Kg/exec">
+
+                            <h4>Name</h4>
+                            <input type="text" id="name" name="user_name" placeholder="Full Name" required>
+                
+                            <h4>Email</h4>
+                            <input type="email" id="mail" name="user_email" placeholder="example@email.com" required>
+
+                            <h4 id="msg-label">Message</h4>
+
+                            <textarea id="msg" name="user_message" placeholder="Enter your message here" required></textarea>
+                            <br>
+                            <button type="submit" class="book">Submit</button>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer"></div>
+                    <!-- Customize the Thankyou Message People See when they submit the form: -->
+                    <!-- <div class="thankyou_message" id="message-display" style="display:none;">
+                        <h1>Thank you for contacting me!<br>I'll get back to you shortly</h1>
+                    </div> -->
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h4>Danism-Web &copy;2023 - Daniel C. Opute</h4>
+            <a href="site-plan.html"><h4 class="h4-inline">Site-Plan</h4></a>
+            <a href="contact-me.html"><h4 class="h4-inline">Contact-Me</h4></a>
+            <div class="footer-logo">
+                <a target="_blank" href="https://www.facebook.com/Daniel.C.Opute/"><img src="images/icons/facebook.png" alt="Facebook icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/danielopute/"><img src="images/icons/linkin.png" alt="Linkedin icon"></a>
+                <a target="_blank" href="https://www.upwork.com/services/product/development-it-figma-or-psd-converted-to-a-tasteful-refined-responsive-website-design-1568348217643474944"><img src="images/icons/upwork.png" alt="Upwork logo"></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. I will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

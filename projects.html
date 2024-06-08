@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel C. Opute">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link type="image/png" rel="icon" href="images/logo.png">
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <link type="text/css" rel="stylesheet" href="styles/projects.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="index.html" id="logo_link">
+                <img id="logo" src="images/logo.png" alt="danism-web logo" width="75" height="75">
+            </a>
+            <a onclick="changeBar()" href="#" id="menu-button">
+                <div id="menu-icon">
+                    <img src="images/menu_bar_round.png" id="menu_img" alt="menu-icon" width="60" height="60">
+                </div>
+            </a>
+            <nav id="navigation">
+                <a href="index.html">HOME</a>
+                <a href="projects.html" id="selected">PROJECTS</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="about-me.html">ABOUT-ME</a>
+                <a href="contact-me.html">CONTACT-ME</a>
+            </nav>
+        </header>
+        <div id="projects-hero">
+            <div id="projects-hero-box">
+                <img src="images/projects/coding_in_prog.jpg" alt="computer screen with written codes">
+            </div>
+            <section class="projects-hero-msg">
+                <h2 class="projects-title">Empty-No Use</h2>
+                <div class="summary-box" id="project-summary-box">
+                    <h4>Welcome to Danism-Web's “Projects” section</h4>
+                    <p>
+                        The main ideal of Danism-Web is to provide visitors with a visual ideal of what 
+                        my web-development skills are and to prove how I can implement this skill in collaborating 
+                        with potential collaborators and employers. This "Projects" section will visually provide you 
+                        with samples of my previous works and projects that I have worked on, so you can clearly 
+                        determine if you would like to work with me. Feel free to browse through my projects 
+                        and enjoy the awesome feel.
+                    </p>
+                </div>
+                <div id="photo-and-btn">
+                    <div class="photo-box">
+                        <img src="images/projects/danielcopute.png" alt="a picture of me (daniel opute)">
+                    </div>
+                    <div class="button-box">
+                        <a href="contact_me.html">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <main class="home-grid">
+            <h1 id="project-title">PROJECTS</h1>
+            <!--CREATING PROJECT BOXES-->
+            <!--Project Box-->
+            <a href="https://danisms.github.io/cse121b/project.html" target="_blank" class="project-box" onmouseover="displayMainProjectDes('project-1')" onmouseleave="removeMainProjectDes('project-1')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-1">
+                            <p>
+                                Interactive Tic Tac Toe is a single-player computer game.<br>
+                                The computer is built to challenge players in competitive games,
+                                aiming to improve concentration and logical reasoning skills.<br>
+                                (HTML, CSS and JavaScript)
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/my_projects/tic-tac-toe.png" alt="project tic-tac-toe" width="400" height="400" loading="lazy">
+                        </div>
+                    </div>
+                    <h2>Tic Tac Toe</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="https://danisms.github.io/cse121b/tell_age/index.html" target="_blank" class="project-box" onmouseover="displayMainProjectDes('project-2')" onmouseleave="removeMainProjectDes('project-2')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-2">
+                            <p>
+                                Tell My Age is a program designed to magically tell your age.<br>
+                                Follow the instructions and the program will tell your age.<br>
+                                (HTML, CSS and JavaScript)
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/my_projects/tell_my_age.png" alt="project tell my age" width="400" height="400" loading="lazy">
+                        </div>
+                    </div>
+                    <h2>Tell My Age</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="https://danisms.github.io/cse121b/new_year_count_down/index.html" class="project-box" onmouseover="displayMainProjectDes('project-3')" onmouseleave="removeMainProjectDes('project-3')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-3">
+                            <p>
+                                Enjoy the awesome feel of a New Year Count Down.<br>
+                                This program is designed to be used as a new year Count Down,
+                                which accommodates projector view and more.<br>
+                                (HTML, CSS and JavaScript)
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/my_projects/new_year_count_down.png" alt="project new year count-down" width="400" height="400" loading="lazy">
+                        </div>
+                    </div>
+                    <h2>New Year Count Down</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="https://danisms.github.io/wdd130/wwr/index.html" class="project-box" onmouseover="displayMainProjectDes('project-6')" onmouseleave="removeMainProjectDes('project-6')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-6">
+                            <p>
+                                My WDD130 Project of a White Water Rafting Site. The site content and design is of my choice and preference.<br>
+                                (HTML, CSS and JavaScript)
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/my_projects/white-water-rafting.png" alt="project white water rafting">
+                        </div>
+                    </div>
+                    <h2>White Water Rafting</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="https://danisms.github.io/wdd230/" class="project-box" onmouseover="displayMainProjectDes('project-4')" onmouseleave="removeMainProjectDes('project-4')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-4">
+                            <p>
+                                My WDD230 Course Homepage<br>
+                                (HTML, CSS and JavaScript)
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/my_projects/wdd-230.png" alt="project WDD230 Home Page" width="400" height="400" loading="lazy">
+                        </div>
+                    </div>
+                    <h2>WDD230</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="https://danisms.github.io/wdd230/chamber/index.html" class="project-box" onmouseover="displayMainProjectDes('project-5')" onmouseleave="removeMainProjectDes('project-5')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-5">
+                            <p>
+                                My WDD230 Front-End Development Project on Creating a Chamber of Commerce website of any industry in my locality.<br>
+                                Site content and design is of my choice and preference.<br>
+                                (HTML, CSS and JavaScript)
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/my_projects/camber-of-commerce.png" alt="project chamber of commerce">
+                        </div>
+                    </div>
+                    <h2>Chamber of Commerce</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="" class="project-box" onmouseover="displayMainProjectDes('project-7')" onmouseleave="removeMainProjectDes('project-7')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-7">
+                            <p>
+                                A description of the project and it's content.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/img-placeholder.png" alt="project-image">
+                        </div>
+                    </div>
+                    <h2>Project Name</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="" class="project-box" onmouseover="displayMainProjectDes('project-8')" onmouseleave="removeMainProjectDes('project-8')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-8">
+                            <p>
+                                A description of the project and it's content.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/img-placeholder.png" alt="project-image">
+                        </div>
+                    </div>
+                    <h2>Project Name</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="" class="project-box" onmouseover="displayMainProjectDes('project-9')" onmouseleave="removeMainProjectDes('project-9')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-9">
+                            <p>
+                                A description of the project and it's content.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/img-placeholder.png" alt="project-image">
+                        </div>
+                    </div>
+                    <h2>Project Name</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="" class="project-box" onmouseover="displayMainProjectDes('project-10')" onmouseleave="removeMainProjectDes('project-10')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-10">
+                            <p>
+                                A description of the project and it's content.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/img-placeholder.png" alt="project-image">
+                        </div>
+                    </div>
+                    <h2>Project Name</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="" class="project-box" onmouseover="displayMainProjectDes('project-11')" onmouseleave="removeMainProjectDes('project-11')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-11">
+                            <p>
+                                A description of the project and it's content.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/img-placeholder.png" alt="project-image">
+                        </div>
+                    </div>
+                    <h2>Project Name</h2>
+                </div>
+            </a>
+            <!--Project Box-->
+            <a href="" class="project-box" onmouseover="displayMainProjectDes('project-12')" onmouseleave="removeMainProjectDes('project-12')">
+                <div class="sub-page-box">
+                    <div class="description-box">
+                        <div class="description" id="project-12">
+                            <p>
+                                A description of the project and it's content.
+                            </p>
+                        </div>
+                        <div class="img-box">
+                            <img src="images/projects/img-placeholder.png" alt="project-image">
+                        </div>
+                    </div>
+                    <h2>Project Name</h2>
+                </div>
+            </a>
+        </main>
+        <footer>
+            <h4>Danism-Web &copy;2023 - Daniel C. Opute</h4>
+            <a href="site-plan.html"><h4>Site-Plan</h4></a>
+            <a href="contact-me.html"><h4>Contact-Me</h4></a>
+            <div class="footer-logo">
+                <a target="_blank" href="https://www.facebook.com/Daniel.C.Opute/"><img src="images/icons/facebook.png" alt="Facebook icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/danielopute/"><img src="images/icons/linkin.png" alt="Linkedin icon"></a>
+                <a target="_blank" href="https://www.upwork.com/services/product/development-it-figma-or-psd-converted-to-a-tasteful-refined-responsive-website-design-1568348217643474944"><img src="images/icons/upwork.png" alt="Upwork logo"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
